@@ -1,0 +1,22 @@
+ -D 开发需要 -S开发上线都需要
+先初始化 npm init
+
+webpack 相关
+npm install webpack webpack-dev-server
+
+babel 相关
+npm install babel-core babel-loader babel-preset-es2015 babel-preset-stage-0 babel-preset-react css-loader style-loader less less-loader html-webpack-plugin -D
+
+react 相关
+npm install react redux react-redux react-router-dom -S
+
+fetch 相关为了防止浏览器不兼容 如果不兼容whatwg-fetch会将fetch转成ajax，es6-promise解决promise兼容问题
+ npm install es6-promise whatwg-fetch -D
+
+后台用express
+npm install express -S
+
+scripts启动命令相关--progress有进度条
+"start":"webpack-dev-server --port 5000 --open --progress --colors"
+
+"build":"webpack -p" 打包压缩文件
