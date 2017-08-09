@@ -16,7 +16,7 @@ export default class RouterMap extends Component{
                 <Router>
                     <div className="footerBox">
                         <ul className="navList" style={{margin:0}}>
-                            <li><Link exect to="/">首页</Link></li>
+                            <li><Link to="/">首页</Link></li>
                             <li><Link to="/list">特产</Link></li>
                             <li><Link to="/shoppingCar">订单</Link></li>
                             <li><Link to="/myCenter">我的</Link></li>
