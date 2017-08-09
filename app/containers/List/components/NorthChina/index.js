@@ -40,8 +40,8 @@ render(){
                     <div className="thirdFood">
                         <div>{item.productName}</div>
                         <div>{item.describe}</div>
-                        <div>&gt;</div>
                     </div>
+                    <div className="gt">&gt;</div>
                 </li>
             ))}
         </ul>
