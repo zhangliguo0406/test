@@ -29,8 +29,6 @@ export default class Northeast extends Component{
         this.ajaxReq({type:'华北特产'});
     }
 
-
-
 render(){
     return(
         <ul className="secondFood">

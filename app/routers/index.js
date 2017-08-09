@@ -1,13 +1,11 @@
-/**
- * Created by z on 2017/8/7.
- */
 import React,{Component} from 'react';
 //路由HasRouter
-import {HashRouter as Router, Route,Link,Switch} from "react-router-dom";
+import {HashRouter as Router, Route,Link} from "react-router-dom";
 import Home from "../containers/Home/index";
 import List from "../containers/List/index";
 import ShoppingCar from "../containers/ShoppingCar/index";
 import MyCenter from "../containers/MyCenter/index";
+import GoodsDetail from '../containers/goodsDetail/index'
 import "./index.less"
 export default class RouterMap extends Component{
     render(){
@@ -26,6 +24,7 @@ export default class RouterMap extends Component{
                         <Route path="/list" component={List}/>
                         <Route path="/shoppingCar" component={ShoppingCar}/>
                         <Route path="/myCenter" component={MyCenter}/>
+                        <Route path="/goodsDetail" component={GoodsDetail}/>
                     </div>
                 </Router>
         )
