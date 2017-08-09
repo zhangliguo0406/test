@@ -21,12 +21,15 @@ export default class MyCenter extends Component{
                         <img src="" alt=""/>
                         <span>用户名</span>
                     </div>
-                    <div className="userMsg"><a href="http://localhost:3002/#/shoppingCar">我的订单 <span className="arrow pull-right">&gt;</span></a></div>
+                    <Link to="/shoppingCar">
+                        <div className="userMsg"><a href="javascript;">我的订单 <span className="arrow pull-right">&gt;</span></a></div>
+                    </Link>
+
                     <div className="userList">
-                        <p>我的信息 <span className="arrow pull-right icon-more">&gt;</span></p>
+                        <p>我的信息 <span className="arrow pull-right">&gt;</span></p>
                         <div className="hid">
-                            <p><Link to="/myDetail">个人信息</Link><span className="arrow pull-right">&gt;</span></p>
-                            <p><Link to="/address">收获地址</Link><span className="arrow pull-right">&gt;</span></p>
+                            <Link to="/myDetail"><p>个人信息<span className="arrow pull-right">&gt;</span></p></Link>
+                            <Link to="/address"><p>收获地址<span className="arrow pull-right">&gt;</span></p></Link>
                         </div>
 
                     </div>

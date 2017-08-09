@@ -9,7 +9,7 @@
   position: fixed;
   display: flex;
   bottom: 0;
-  background-color: bisque;
+  background-color:#ccc;
   z-index: 99;
 }
 .footerBox .navList li {

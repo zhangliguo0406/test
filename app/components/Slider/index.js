@@ -22,7 +22,7 @@ export default class Slider extends Component{
             }
         };
         return (
-            <div >
+            <div style={{marginTop:50}}>
                 <ReactSwipe className="carousel" swipeOptions={opts}>
                     <div className="sliders">
                         <img src="http://img2.imgtn.bdimg.com/it/u=3226368598,158213272&fm=26&gp=0.jpg" alt=""/>

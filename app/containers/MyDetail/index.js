@@ -13,7 +13,7 @@ export default class MyDetail extends Component{
             <div>
                 <div>
                     <nav className="navbar navbar-default navbar-fixed-top">
-                        <p className="text-center navbar-text"><span className="pull-left back" onClick={()=>history.back()}>&lt;</span>个人资料</p>
+                        <p style={{fontSize:20}} className="text-center navbar-text"><span className="pull-left back" onClick={()=>history.back()} >&lt;</span>个人资料</p>
                     </nav>
                 </div>
             </div>
