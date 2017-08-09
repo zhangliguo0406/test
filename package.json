@@ -1,7 +1,7 @@
 {
   "name": "test1",
   "version": "1.0.0",
-  "description": "",
+  "description": "-D （--dev） 开发需要  -S (--save-dev) 开发上线都需要 也可以用yarn add 依赖模块 后面加dev就是开发需要 不加默认就是开发上线都学要\r 先初始化 npm init",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --port 3002 --open --progress --colors",
@@ -38,5 +38,13 @@
     "react-router-dom": "^4.1.2",
     "redux": "^3.7.2",
     "swiper": "^3.4.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangliguo0406/test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhangliguo0406/test/issues"
+  },
+  "homepage": "https://github.com/zhangliguo0406/test#readme"
 }
