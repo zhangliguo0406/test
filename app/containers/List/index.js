@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-/**
- * Created by z on 2017/8/7.
- */
-import React,{Component} from 'react';
-export default class List extends Component{
-    render(){
-        return(
-            <div>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                </ul>
-            </div>
-        )
-    }
-}
-=======
 import React,{Component} from 'react';
 import {HashRouter as Router,Route,Link} from 'react-router-dom';
 import Hot from './components/Hot/index';
@@ -24,7 +5,6 @@ import NorthChina from './components/NorthChina/index';
 import Northeast from './components/Northeast/index';
 import Other from './components/Other/index';
 import SouthChina from './components/SouthChina/index';
-
 
 export default class List extends Component{
     render(){
@@ -51,4 +31,3 @@ export default class List extends Component{
 }
 
 import './index.less';
->>>>>>> 85cbaeb3d84313a85916bbffe7e8edd86c19ffcf

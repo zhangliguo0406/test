@@ -1,23 +1,4 @@
-<<<<<<< HEAD
-/**
- * Created by z on 2017/8/7.
- */
-=======
-<<<<<<< HEAD
->>>>>>> 85cbaeb3d84313a85916bbffe7e8edd86c19ffcf
-import React,{Component} from 'react';
-export default class ShoppingCar extends Component{
-    render(){
-        return(
-            <div>
-                这是购物车
-            </div>
-        )
-    }
-}
-<<<<<<< HEAD
-=======
-=======
+
 /**
  * Created by z on 2017/8/7.
  */
@@ -56,5 +37,3 @@ export default class ShoppingCar extends Component{
         )
     }
 }
->>>>>>> 9bf4c6f018b81424d227fcb034e0202f527abfeb
->>>>>>> 85cbaeb3d84313a85916bbffe7e8edd86c19ffcf

@@ -21,7 +21,6 @@ export default class Slider extends Component{
                 });
             }
         };
-
         return (
             <div >
                 <ReactSwipe className="carousel" swipeOptions={opts}>
