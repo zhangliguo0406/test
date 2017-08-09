@@ -6,7 +6,6 @@ import Northeast from './components/Northeast/index';
 import Other from './components/Other/index';
 import SouthChina from './components/SouthChina/index';
 
-
 export default class List extends Component{
     render(){
         return(
