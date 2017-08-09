@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {HashRouter as Router, Route,Link,Switch} from "react-router-dom";
-import {hashHistory} from 'react-router';
+import {hashHistory} from 'React-router';
 import $ from 'jquery'
 import './index.less'
 export default class List extends Component {
@@ -29,21 +29,28 @@ export default class List extends Component {
         });
     }
 
-  /*  handleClick = (value) => {
+    handleClick = (value) => {
         console.log(value);
-        hashHistory.push({
-            pathname: 'http://47.93.47.208:3333/product/getHotList',
-            query: {
-                productImg:value.productImg,
-                productName:value.productName,
-                price:value.price
-            },
-        });
-        console.log(title)
+        // hashHistory.push({
+        //     pathname: 'http://47.93.47.208:3333/product/getHotList',
+        //     query: {
+        //         productImg:value.productImg,
+        //         productName:value.productName,
+        //         price:value.price
+        //     },
+        // });
+        // console.log(title)
     };
-*/
+
+    format=(obj)=>{
+        var str="";
+        for(var key in obj){
+            str+=key+"="+obj[key]+"&"
+        }
+        return str;
+    };
     render() {
-        console.log(hashHistory);
+       // console.log(hashHistory);
         return (
             <div>
                 <div className="patch-pull">~~精品推荐~~</div>
@@ -53,8 +60,7 @@ export default class List extends Component {
                         (item,index)=>(
                             <li className="list-item" onClick={()=>{this.handleClick(item)}} key={index}>
                                 <Router>
-                                    {/*<Link to="/content">*/}
-                                    <Link to={'/content/' + item._id}>
+                                    <Link to={{pathname:'/Content?'+this.format(item),query:item,hash:'#hash',state:{data:"a"}}}>
                                         <img src={'http://47.93.47.208:3333/productImg/'+item.productImg}/>
                                         <p className="patch-name">{item.productName} </p>
                                         <span className="price">￥{item.price}元/{item.spec}</span>
