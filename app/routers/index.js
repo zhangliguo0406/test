@@ -9,6 +9,8 @@ import List from "../containers/List/index";
 import ShoppingCar from "../containers/ShoppingCar/index";
 import MyCenter from "../containers/MyCenter/index";
 import "./index.less"
+import MyDetail from "../containers/MyDetail/index";
+import Address from "../containers/Address/index";
 export default class RouterMap extends Component{
     render(){
         return(
@@ -26,8 +28,11 @@ export default class RouterMap extends Component{
                         <Route path="/list" component={List}/>
                         <Route path="/shoppingCar" component={ShoppingCar}/>
                         <Route path="/myCenter" component={MyCenter}/>
+                        <Route path="/myDetail" component={MyDetail}/>
+                        <Route path="/address" component={Address}/>
                     </div>
                 </Router>
         )
     }
 }
+history.back();

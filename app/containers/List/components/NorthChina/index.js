@@ -17,7 +17,7 @@ export default class Northeast extends Component{
                 this.setState({
                     list:res
                 });
-                console.log(this.state.list);
+                //console.log(this.state.list);
             },
             error:function(e){
                 console.log("error",e);
