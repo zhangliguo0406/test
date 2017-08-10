@@ -9,6 +9,7 @@ import Content from "../../components/content/Content";
 
 export default class Home extends Component{
     render(){
+        console.log(this.props);//Object {match: Object, location: Object, history: Object, staticContext:
         return(
             <div>
                 <div className="row header" style={{backgroundColor:"#eee",margin:0,padding:0}}>
