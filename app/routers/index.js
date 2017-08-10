@@ -11,6 +11,8 @@ import "./index.less"
 import Content from "../components/content/Content";
 import MyDetail from "../containers/MyDetail/index";
 import Address from "../containers/Address/index";
+import Login from "../components/User/Login";
+import Signup from "../components/User/Signup";
 export default class RouterMap extends Component{
     render(){
         return(
@@ -23,10 +25,10 @@ export default class RouterMap extends Component{
                             console.log(location);//
                             return ['/','/list','/shoppingCar','/myCenter'].includes(location.pathname)? <ul className="navList" style={{margin:0}}>
 
-                                <li><Link activeStyle={{color:'red'}} to="/"><i className="iconfont icon-wxbzhuye"></i>首页</Link></li>
-                                <li><Link activeStyle={{color:'red'}} to="/list"><i  className="icon iconfont icon-shangpin-xianxing"></i>特产</Link></li>
-                                <li><Link activeStyle={{color:'red'}} to="/shoppingCar"><i  className="icon iconfont icon-gouwuchetianjia"></i>订单</Link></li>
-                                <li><Link activeStyle={{color:'red'}} to="/myCenter"><i  className="iconfont icon-activity"></i>我的</Link></li>
+                                <li><Link to="/"><i className="iconfont icon-wxbzhuye"></i>首页</Link></li>
+                                <li><Link to="/list"><i  className="icon iconfont icon-shangpin-xianxing"></i>特产</Link></li>
+                                <li><Link to="/shoppingCar"><i  className="icon iconfont icon-gouwuchetianjia"></i>订单</Link></li>
+                                <li><Link to="/myCenter"><i  className="iconfont icon-activity"></i>我的</Link></li>
                             </ul>:null
                         }}/>
 
@@ -39,7 +41,8 @@ export default class RouterMap extends Component{
                         <Route path="/myDetail" component={MyDetail}/>
                         <Route path="/address" component={Address}/>
                         <Route path="/goodsDetail" component={GoodsDetail}/>
-
+                        <Route path="/login" component={Login}/>
+                        <Route path="/signup" component={Signup}/>
                     </div>
                 </Router>
         )

@@ -8,7 +8,7 @@ import {HashRouter as Router, Route, Link} from 'react-router-dom';
 export default class MyCenter extends Component{
     constructor(){
         super();
-        this.state={title:"个人中心",flag:true}
+        this.state={title:"个人中心",flag:false}
     }
     render(){
         let Content=()=>(
@@ -30,10 +30,14 @@ export default class MyCenter extends Component{
 
                 </div>
             </div>:<div className="btnAll">
-                <button className="btn btn-primary">登录</button>
+                <Link to="/login">
+                    <button className="btn btn-primary">登录</button>
+                </Link>
                 <br/>
-                <button className="btn btn-default">注册</button>
-                <p>已有账号点击登录，没有账号就点击注册</p>
+                <Link to="/signup">
+                    <button className="btn btn-default">注册</button>
+                </Link>
+
             </div>
         );
         return(
