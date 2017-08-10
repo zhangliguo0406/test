@@ -7,7 +7,7 @@ export default class Header extends Component{
         return (
             <div>
                 <nav className="navbar navbar-default navbar-fixed-top">
-                    <p style={{fontSize:20}} className="text-center navbar-text">{this.props.title}</p>
+                    <p style={{fontSize:23,fontWeight:'bold',color:'black'}} className="text-center navbar-text">{this.props.title}</p>
                 </nav>
             </div>
         )
