@@ -22,12 +22,8 @@ export default class Home extends Component{
                         </div>
                     </div>
                 </div>
-
                     <Slider/>
                     <List/>
-                    <Content/>
-
-
             </div>
 
         )
